@@ -74,7 +74,7 @@
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0"  data-aos="fade-up" data-aos-delay="200">
             <div class="pricing border-secondary text-center">
               <h2>Basic Pass</h2>
-              <div class="amount"><sup>$</sup><span class="number">190</span> </div>
+              <div class="amount">Rs<span class="number">190</span> </div>
               <ul class="list-unstyled mb-5">
                 <li>1-Day Entrance</li>
                 <li>Essential Access</li>
@@ -82,14 +82,14 @@
                 <li>1 Workshop</li>
                 <li>Free Snacks</li>
               </ul>
-              <div><a href="#" class="btn btn-secondary px-4 py-2">Buy Ticket</a></div>
+             
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="pricing border-primary text-center">
               <h2>Standard Pass</h2>
-              <div class="amount"><sup>$</sup><span class="number">289</span> </div>
+              <div class="amount">Rs<span class="number">289</span> </div>
               <ul class="list-unstyled mb-5">
                 <li>1-Day Entrance</li>
                 <li>Essential Access</li>
@@ -97,14 +97,14 @@
                 <li>1 Workshop</li>
                 <li>Free Snacks</li>
               </ul>
-              <div><a href="#" class="btn btn-primary px-4 py-2">Buy Ticket</a></div>
+              
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing border-secondary text-center">
               <h2>Premium Pass</h2>
-              <div class="amount"><sup>$</sup><span class="number">490</span> </div>
+              <div class="amount">Rs<span class="number">490</span> </div>
               <ul class="list-unstyled mb-5">
                 <li>1-Day Entrance</li>
                 <li>Essential Access</li>
@@ -112,13 +112,79 @@
                 <li>1 Workshop</li>
                 <li>Free Snacks</li>
               </ul>
-              <div><a href="#" class="btn btn-secondary px-4 py-2">Buy Ticket</a></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+	
+	
+     <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <form action="get_tickets.php" method="post">
+             
+			 <h1>Fill in details</h1>
+
+              <div class="row form-group">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="" for="fname">Name</label>
+                  <input type="text" id="fname" name="fname" class="form-control" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="" for="lname">Contact</label>
+                  <input type="number" min="10" max="10" id="lname" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="" for="email">Email</label> 
+                  <input type="email" id="email" name="email"class="form-control" required>
+                </div>
+              </div>
+			  <div class="row form-group">
+                
+				
+                <div class="col-md-4" >
+                  Basic Pass:<input type="radio" id="basic" value="Basic Pass" name= "selection"class="form-control">
+                </div>
+              </div>
+			  <div class="row form-group">
+                
+                <div class="col-md-4">
+                   
+                  Standard Pass:<input type="radio" id="std" name="selection" value="Standard Pass" class="form-control">
+                </div>
+              </div>
+			  <div class="row form-group">
+                
+                <div class="col-md-4">
+                Premium Pass:<input type="radio" id="pre" name="selection" value="Premium Pass" class="form-control">
+                </div>
+              
+				</div>
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="" for="num_tick">No. of tickets required</label> 
+                  <input type="number" min="1" max="5" name="num_tick" id="num_tick" class="form-control" required>
+                </div>
+              </div>
+
+              
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Reserve Ticket(s)" class="btn btn-primary py-2 px-4 text-white">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
 
     <div class="site-section" data-aos="fade">
       <div class="container">
